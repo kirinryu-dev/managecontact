@@ -1,4 +1,5 @@
 import { Form } from "react-router-dom";
+// import contact from '../pages/Contact';
 
 export default function Contact() {
   const contact = {
@@ -13,13 +14,13 @@ export default function Contact() {
   return (
     <div id="contact">
       <div>
-        <img
+        {/* <img
           key={contact.avatar}
           src={
             contact.avatar ||
             `https://robohash.org/${contact.id}.png?size=200x200`
           }
-        />
+        /> */}
       </div>
 
       <div>
@@ -36,12 +37,12 @@ export default function Contact() {
 
         {contact.twitter && (
           <p>
-            <a
+            {/* <a
               target="_blank"
               href={`https://twitter.com/${contact.twitter}`}
             >
               {contact.twitter}
-            </a>
+            </a> */}
           </p>
         )}
 
@@ -51,7 +52,7 @@ export default function Contact() {
           <Form action="edit">
             <button type="submit">Edit</button>
           </Form>
-          <Form
+          {/* <Form
             method="post"
             action="destroy"
             onSubmit={(event) => {
@@ -65,7 +66,7 @@ export default function Contact() {
             }}
           >
             <button type="submit">Delete</button>
-          </Form>
+          </Form> */}
         </div>
       </div>
     </div>
