@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
-import Contact from './pages/Contact';
 import Root from './utils/root';
 import Error from './error/error-page';
 
